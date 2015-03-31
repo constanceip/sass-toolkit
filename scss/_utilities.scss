@@ -1,0 +1,39 @@
+//Utilities//
+
+//Import Google fonts
+
+@if variable-exists(font-url-google){
+	@import url($font-url-google);
+}
+
+@if variable-exists(font-secondary-url-google){
+	@import url($font-secondary-url-google);
+}
+
+//convert px to em
+
+@function em($px, $base: $base-font-size) {
+    @return ($px / $base) * 1em;
+}
+
+//mixins
+
+@mixin theme-colors ($map) {
+	@each $theme, $color in $map {
+		
+		&--#{$theme} {
+			background-color: $color;
+			display: inline-block;
+			border-radius: 5px;
+			border:none;
+			color:white;
+		  	padding: 6px 12px;
+		 	margin-bottom: 0;
+		  	font-size: 14px;
+		  	line-height:42px;
+			text-align: center;
+			vertical-align: middle;
+		}
+	}
+}
+

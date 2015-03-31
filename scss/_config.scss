@@ -1,0 +1,55 @@
+/*global configs*/
+
+/*font stack
+*/
+$font-url-google : 'http://fonts.googleapis.com/css?family=Raleway:100,300,400,700,900';
+$font-secondary-url-google : 'http://fonts.googleapis.com/css?family=Indie+Flower:100,300,400,700,900';
+
+$font-family-primary : 'Raleway', sans-serif;
+$font-family-secondary : 'Indie Flower', cursive;
+
+
+/*font weight
+*/
+$font-weight--thin : 100;
+$font-weight--light : 300;
+$font-weight--medium : 400;
+$font-weight--bold : 700;
+$font-weight--ultra-bold : 900;
+
+
+/*base-colors
+*/
+$color-light : #F5F5F5;
+$color-medium : #A8A8A8;
+$color-dark : #474747;
+
+$color--blue : #1160B2;
+$color--light-yellow: #FFB639;
+$color--dark-yellow: #B27100;
+
+/*color usage
+*/
+$color-primary : $color--blue;
+$color-secondary : $color--dark-yellow;
+$color-accent : $color--light-yellow; 
+$color-shadow : rgba($color-dark,.2);
+
+/*UI colors*/
+
+$ui-colors: (
+	default: $color-dark,
+	background: $color-light,
+	medium: $color-medium,
+	special: $color-primary,
+	complement: $color-secondary,
+	accent: $color-accent,
+	shadow: $color-shadow
+	);
+
+
+
+/*text*/
+
+$base-font-size: 16px;
+$base-height: 24px;

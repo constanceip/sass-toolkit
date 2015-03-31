@@ -1,0 +1,84 @@
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+header {
+	background-image: url('http://www.highreshdwallpapers.com/wp-content/uploads/2014/01/a-74-1280x960.jpg');
+	color: $color-light;
+	margin: 0;
+	padding: 30px;
+	text-align: center;
+	height:450px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size : $base-font-size;
+	line-height : ($base-height/$base-font-size);
+	font-family : $font-family-primary;
+}
+
+h1 {
+	font-family : $font-family-secondary;
+	font-weight : $font-weight--light;
+	font-size : 100px;
+}
+
+h2 {
+	font-weight : $font-weight--light;
+	font-size : 34px;
+}
+
+a {
+	text-decoration:none;
+	color: $color-dark;
+}
+
+nav {
+		ul {
+		text-align: left;
+	  	display: inline;
+	 	 margin: 0;
+	  	padding: 0;
+	  	list-style: none;
+		}
+
+		li {
+		  display: inline-block;
+		  margin-right: -4px;
+		  position: relative;
+		  padding: 15px 20px;
+		  background: #fff;
+		  cursor: pointer;
+		  &:hover {
+		 	background: #555;
+  			color: #fff;
+  			ul {
+			  display: block;
+			  opacity: 1;
+			  visibility: visible;
+			}
+		  }
+			  ul {
+			  padding: 0;
+			  position: absolute;
+			  top: 48px;
+			  left: 0;
+			  width: 150px;
+			  display: none;
+			  visibility: hidden;
+			  li { 
+				  background: #555; 
+				  display: block; 
+				  color: #fff;
+				  &:hover {
+				  background: #666; 
+				  color: #fff;
+				 		 }
+					}
+				}
+		}
+	}
+

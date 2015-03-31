@@ -1,0 +1,17 @@
+@import "config";
+@import "base";
+@import "utilities";
+@import "contact";
+
+.btn {
+	@include theme-colors ($ui-colors);
+	}
+
+.btn-clear {
+	margin-top: 50px;
+}
+
+.img {
+	width:5%;
+	float:right;
+}
